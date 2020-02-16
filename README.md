@@ -89,3 +89,7 @@ GitHub Details
 - Edit this README.md with a link to your gh-pages site: e.g. http://YourUsernameGoesHere.github.io/Experiment/index.html
 - Replace this file (README.md) with your writeup and Design/Technical achievements.
 - To submit, make a [Pull Request](https://help.github.com/articles/using-pull-requests/) on the original repository.
+- Name your submission using the following scheme: 
+```
+a3-FirstLastnameMember1-FirstLastnameMember2-FirstLastnameMember3-...
+```
