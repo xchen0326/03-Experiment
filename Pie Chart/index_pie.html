@@ -12,17 +12,8 @@
         width = 500 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
 
-        var maxNumGroups = 10;
-        var minNumGroups = 5;
-
-        var data = [];
-        var numGroups = Math.random() * ((maxNumGroups - minNumGroups)) + minNumGroups;
-        //console.log(numGroups);
-
-        for(var i = 0; i < numGroups; i++){
-            var newNumber = Math.random() * 50;
-            data.push(newNumber);
-        }
+        var data = [39.661742221649845, 29.509233506901, 36.63603606588454, 17.83527414853302,  5.10776627090217,
+                    37.631556434971934, 27.974214164762813,  18.950135599904915];
 
         var svg = d3.select("body")
                         .append("svg")
@@ -59,14 +50,14 @@
             .text(function(d, i) { return i + 1 })
             .style("font-size", "10px");
 
-        svg.append("text").text(
-            "What percentage is slice " + (data.indexOf(d3.min(data)) + 1) +
-            " of slice " + (data.indexOf(d3.max(data)) + 1) + "?"
-        )
-        .attr("transform", "translate(" +  (-100) + "," + (150) + ")")
+        svg.append("text")
+                .text("What percentage is slice 5 of slice 1?")
+                .attr("transform", "translate(" +  (-100) + "," + (150) + ")")
 
-        console.log(data.indexOf(d3.max(data)) + 1)
-        console.log(data.indexOf(d3.min(data)) + 1)
+        console.log(d3.min(data));
+        console.log(d3.max(data));
+
+        console.log(d3.min(data)/d3.max(data));
     </script>
 </body>
 </html>
