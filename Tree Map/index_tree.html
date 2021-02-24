@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tree Map</title>
+</head>
+<body>
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript">
+    function handleClick(){
+
+        let val = document.getElementById("myVal").value;
+
+        if(isNaN(document.getElementById("myVal").value)){
+            document.writeln("The number you entered is not a number");
+            document.writeln("Please reload the page and try again");
+        }
+        else{
+            document.writeln("Thank you for completing this form");
+            console.log(val);
+        }
+    }
+</script>
+
+
+<script>
+    console.log(d3);
+    var margin = {top: 10, right: 30, bottom: 40, left: 40},
+        width = 300 - margin.left - margin.right,
+        height = 300 - margin.top - margin.bottom;4
+
+    var svg = d3.select("body")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+    // Read data
+    d3.csv('index.csv', function(data) {
+
+        // stratify the data: reformatting for d3.js
+        var root = d3.stratify()
+            .id(function(d) { return d.name; })
+            .parentId(function(d) { return d.parent; })
+            (data);
+        root.sum(function(d) { return +d.value })
+
+        d3.treemap()
+            .size([width, height])
+            .padding(0)
+            (root)
+
+        console.log(root.leaves())
+
+        // now add the rectangles corresponding
+        svg
+            .selectAll("rect")
+            .data(root.leaves())
+            .enter()
+            .append("rect")
+            .attr('x', function (d) { return d.x0; })
+            .attr('y', function (d) { return d.y0; })
+            .attr('width', function (d) { return d.x1 - d.x0; })
+            .attr('height', function (d) { return d.y1 - d.y0; })
+            .style("stroke", "black")
+            .style("fill", "white");
+
+        // and to add the text labels
+        svg
+            .selectAll("text")
+            .data(root.leaves())
+            .enter()
+            .append("text")
+            .attr("x", function(d){ return d.x0+10})
+            .attr("y", function(d){ return d.y0+20})
+            .text(function(d, i){ return i + 1})
+            .attr("font-size", "15px")
+            .attr("fill", "black")
+
+        svg.append("text")
+            .text("What percentage is rectangle 3 of rectangle 4?")
+        .attr("transform", "translate(" +  -40 + "," + (275) + ")")
+    })
+
+
+
+
+
+
+</script>
+<form name="myform" onsubmit="handleClick()">
+    <input name="Submit"  type="submit" value="Submit" >
+    <input type="text" id="myVal" placeholder="Enter Number Here...">
+</form>
+</body>
+</html>
