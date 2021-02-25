@@ -1,7 +1,7 @@
 .father{
     width:600px;
     height:500px;
-    background-color:red;
+    background-color: dodgerblue;
     margin: auto;
     position: relative;
     top: 50px;
@@ -31,7 +31,7 @@
     background-color: burlywood;
     margin: auto;
     position: relative;
-    top: 500px;
+    /*top: 50px;*/
     left: 0;
     right: 0;
     bottom: 0;
@@ -53,4 +53,30 @@ input{
 #ansSubmit{
     width: 60px;
 }
+
+
+/*.title {*/
+/*    font-size: 3.7em;*/
+/*    fill: #206cc9;*/
+/*}*/
+
+
+/*.axis-label {*/
+/*    font-size: 5em;*/
+/*    fill: #206cc9;*/
+/*}*/
+
+/*text {*/
+/*    font-size: 6em;*/
+/*    font-family: sans-serif;*/
+/*}*/
+
+/*.tick text {*/
+/*    font-size: 6em;*/
+/*    fill: #211821;*/
+/*}*/
+
+/*.tick line {*/
+/*    stroke: #211821;*/
+/*}*/
 

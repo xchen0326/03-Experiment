@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Pie Chart</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
 </head>
 <div class="father">
+    <svg width="600" height="500"></svg>
     <div class="ansBox">
         <!--    <input type="text">-->
         <table>
@@ -45,8 +47,9 @@
         var data = [39.661742221649845, 29.509233506901, 36.63603606588454, 17.83527414853302,  5.10776627090217,
                     37.631556434971934, 27.974214164762813,  18.950135599904915];
 
-        var svg = d3.select(".father")
-                        .append("svg")
+
+        var svg = d3.select("svg")
+                        // .append("svg")
                         .data([data])
                         .attr("width", 600)
                         .attr("height", 500)

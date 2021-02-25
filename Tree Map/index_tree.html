@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <title>Tree Map</title>
 </head>
+<link rel="stylesheet" href="/style.css">
+<script src="/script.js" defer></script>
 <body>
+<div class="father">
+    <svg width="600" height="500"></svg>
+    <div class="ansBox">
+        <!--    <input type="text">-->
+        <table>
+            <tr>
+                <th><input type="text" class="ansInput" placeholder="small to large ratio"></th>
+                <th><input type="button" id="ansSubmit" value="Next" onclick="recordAns(this)"></th>
+            </tr>
+        </table>
+    </div>
+</div>
+
 
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -31,16 +46,16 @@
         width = 300 - margin.left - margin.right,
         height = 300 - margin.top - margin.bottom;4
 
-    var svg = d3.select("body")
-        .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+    var svg = d3.select("svg")
+        // .append("svg")
+        // .data([data])
+        .attr("width", 600)
+        .attr("height", 500)
         .append("g")
-        .attr("transform",
-            "translate(" + margin.left + "," + margin.top + ")");
+        .attr("transform", "translate(" + 110 + "," + 110 + ")")
 
     // Read data
-    d3.csv('index.csv', function(data) {
+    d3.csv('index1.csv', function(data) {
 
         // stratify the data: reformatting for d3.js
         var root = d3.stratify()
@@ -92,9 +107,9 @@
 
 
 </script>
-<form name="myform" onsubmit="handleClick()">
-    <input name="Submit"  type="submit" value="Submit" >
-    <input type="text" id="myVal" placeholder="Enter Number Here...">
-</form>
+<!--<form name="myform" onsubmit="handleClick()">-->
+<!--    <input name="Submit"  type="submit" value="Submit" >-->
+<!--    <input type="text" id="myVal" placeholder="Enter Number Here...">-->
+<!--</form>-->
 </body>
 </html>

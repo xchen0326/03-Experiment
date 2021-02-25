@@ -3,23 +3,33 @@
 
 <style>
 </style>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/style.css">
+<script src="/script.js" defer></script>
 
-<iframe
-        width="560" height="315"
-        src="https://www.youtube.com/embed/_8V5o2UHG0E" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+<!--<iframe-->
+<!--        width="560" height="315"-->
+<!--        src="https://www.youtube.com/embed/_8V5o2UHG0E" frameborder="0"-->
+<!--        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+<!--        allowfullscreen>-->
 
-</iframe>
+<!--</iframe>-->
 
 
 <body>
-  <h1> Experiment </h1>
+<!--  <h1> Experiment </h1>-->
 
-  <div>
-  <svg width="1500" height="1000"></svg>
+<div class="father">
+  <svg width="600" height="500"></svg>
+  <div class="ansBox">
+    <!--    <input type="text">-->
+    <table>
+      <tr>
+        <th><input type="text" class="ansInput" placeholder="small to large ratio"></th>
+        <th><input type="button" id="ansSubmit" value="Next" onclick="recordAns(this)"></th>
+      </tr>
+    </table>
   </div>
+</div>
 
 </body>
 
@@ -70,7 +80,7 @@ I modified this code and added some new things-->
 
 
 
-    const margin = {top: 100, left: 100, bottom: 150, right: 300};
+    const margin = {top: 50, left: 50, bottom: 50, right: 50};
 
     // define inner width  and height
     const innerWidth = width-margin.left- margin.right;
