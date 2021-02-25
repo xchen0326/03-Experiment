@@ -1,0 +1,56 @@
+.father{
+    width:600px;
+    height:500px;
+    background-color:red;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*body{*/
+/*    background-color: red;*/
+/*}*/
+.texts{
+    /*width:200px;*/
+    /*height:200px;*/
+    /*position:absolute;*/
+    /*top:50%;*/
+    /*left:50%;*/
+    /*margin-top:-100px;*/
+    /*margin-left:-100px;*/
+    /*background-color:black;*/
+    text-align: center;
+    padding-top: 40px;
+}
+
+.ansBox{
+    width: 600px;
+    height: 50px;
+    background-color: burlywood;
+    margin: auto;
+    position: relative;
+    top: 500px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#agreeBtn{
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+}
+
+table, table td, table th{
+    margin: 0 auto;
+}
+input{
+    height: 30px;
+    border-radius: 4px;
+}
+#ansSubmit{
+    width: 60px;
+}
+

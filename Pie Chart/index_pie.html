@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Pie Chart</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
+<div class="father">
+    <div class="ansBox">
+        <!--    <input type="text">-->
+        <table>
+            <tr>
+                <th><input type="text" class="ansInput" placeholder="small to large ratio"></th>
+                <th><input type="button" id="ansSubmit" value="Next" onclick="recordAns(this)"></th>
+            </tr>
+        </table>
+    </div>
+</div>
 <body>
 
 <script src="https://d3js.org/d3.v6.min.js"></script>
@@ -33,13 +45,15 @@
         var data = [39.661742221649845, 29.509233506901, 36.63603606588454, 17.83527414853302,  5.10776627090217,
                     37.631556434971934, 27.974214164762813,  18.950135599904915];
 
-        var svg = d3.select("body")
+        var svg = d3.select(".father")
                         .append("svg")
                         .data([data])
-                        .attr("width", width + margin.left + margin.right)
-                        .attr("height", height + margin.top + margin.bottom)
+                        .attr("width", 600)
+                        .attr("height", 500)
                         .append("g")
                         .attr("transform", "translate(" + 110 + "," + 110 + ")")
+            // .attr("width", width + margin.left + margin.right)
+            // .attr("height", height + margin.top + margin.bottom)
 
         var pie = d3.pie()
 
@@ -77,9 +91,9 @@
 
         console.log(d3.min(data)/d3.max(data));
     </script>
-<form name="myform" onsubmit="handleClick()">
-    <input name="Submit"  type="submit" value="Submit" >
-    <input type="text" id="myVal" placeholder="Enter Number Here...">
+<!--<form name="myform" onsubmit="handleClick()">-->
+<!--    <input name="Submit"  type="submit" value="Submit" >-->
+<!--    <input type="text" id="myVal" placeholder="Enter Number Here...">-->
 </form>
 </body>
 </html>
