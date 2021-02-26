@@ -51,3 +51,6 @@ about bar charts in a more broad way.
 - Made the email-sending functionality work so that the developers
 can receive the responders' answers.
 - Deployed the web page on herokuApp.
+
+
+Reference link: https://www.datanovia.com/en/blog/ggplot-examples-best-reference/#error-bars
