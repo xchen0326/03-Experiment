@@ -1,7 +1,21 @@
+.background {
+    /* The image used */
+    background-image: url("parallax.png");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .father{
     width:600px;
     height:500px;
     background-color: dodgerblue;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: bold;
     margin: auto;
     position: relative;
     top: 20px;
@@ -9,10 +23,15 @@
     right: 0;
     bottom: 0;
 }
+
+.thankyoumsg{
+    font-size: 40px;
+}
 .description{
     width: 700px;
     height: 200px;
-    /*background-color: aquamarine;*/
+    font-family: Lato, sans-serif;
+    color: white;
     margin: auto;
     position: fixed;
     top: 76%;
