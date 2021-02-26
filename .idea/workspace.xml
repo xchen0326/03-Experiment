@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e39ace4-5808-4b16-b9e1-f0a266545a56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/x" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/responds/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/responds/data.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/game-score-record" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/test/03-Experiment" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -62,7 +63,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614221926251</updated>
-      <workItem from="1614221927328" duration="24649000" />
+      <workItem from="1614221927328" duration="25226000" />
+      <workItem from="1614298615386" duration="53000" />
     </task>
     <servers />
   </component>
@@ -79,6 +81,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="486" y="261" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614298003102">
@@ -89,10 +92,10 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="451" y="207" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.920@0.0.1440.920" timestamp="1614236873586" />
-    <state x="501" y="216" key="FileChooserDialogImpl" timestamp="1614287124945">
+    <state x="501" y="216" key="FileChooserDialogImpl" timestamp="1614298666871">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="501" y="216" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1614287124945" />
+    <state x="501" y="216" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1614298666871" />
     <state x="383" y="195" width="672" height="678" key="search.everywhere.popup" timestamp="1614295247526">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
