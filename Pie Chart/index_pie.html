@@ -6,16 +6,27 @@
     <link rel="stylesheet" href="/style.css">
     <script src="/script.js" defer></script>
 </head>
-<div class="father">
+<div class="father" style="text-align: center">
     <svg width="600" height="500"></svg>
     <div class="ansBox">
         <!--    <input type="text">-->
         <table>
             <tr>
-                <th><input type="text" class="ansInput" placeholder="small to large ratio"></th>
+                <th><input type="text" class="ansInput" placeholder="your answer here"></th>
                 <th><input class="pie" type="button" id="ansSubmit" value="Next" onclick="recordAns(this)"></th>
             </tr>
         </table>
+    </div>
+</div>
+<div class="description">
+    <div class="dscpText">
+        What do you think is the percentage of AREA of Slice 5 to Slice 1?
+    </div>
+    <div class="dscpText">
+        Please input the answer into the answer box above.
+    </div>
+    <div class="dscpText">
+        For example, if you think the AREA of Slice 5 is 50% of Slice 1, please input 50.
     </div>
 </div>
 <body>
@@ -54,7 +65,8 @@
                         .attr("width", 600)
                         .attr("height", 500)
                         .append("g")
-                        .attr("transform", "translate(" + 110 + "," + 110 + ")")
+                        .attr("transform", "translate(" + 300 + "," + 250 + ")")
+                        // .attr("transform", "translate(" + 110 + "," + 110 + ")")
             // .attr("width", width + margin.left + margin.right)
             // .attr("height", height + margin.top + margin.bottom)
 
@@ -62,7 +74,7 @@
 
         var arc = d3.arc()
                     .innerRadius(0)
-                    .outerRadius(100)
+                    .outerRadius(200)
 
         var arcs = svg.selectAll("arc")
                     .data(pie(data))
@@ -83,11 +95,11 @@
             })
             .attr("text-anchor", "middle")
             .text(function(d, i) { return i + 1 })
-            .style("font-size", "10px");
+            .style("font-size", "15px");
 
-        svg.append("text")
-                .text("What percentage is slice 5 of slice 1?")
-                .attr("transform", "translate(" +  (-100) + "," + (150) + ")")
+        // svg.append("text")
+        //         .text("What percentage is slice 5 of slice 1?")
+        //         .attr("transform", "translate(" +  (-100) + "," + (200) + ")")
 
         console.log(d3.min(data));
         console.log(d3.max(data));
