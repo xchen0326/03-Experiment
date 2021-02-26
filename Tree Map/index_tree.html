@@ -6,7 +6,7 @@
 </head>
 <link rel="stylesheet" href="/style.css">
 <script src="/script.js" defer></script>
-<body>
+<body style="display: block">
 <div class="father">
     <svg width="600" height="500"></svg>
     <div class="ansBox">
@@ -17,6 +17,8 @@
                 <th><input type="button" id="ansSubmit" value="Next" onclick="recordAns(this)"></th>
             </tr>
         </table>
+
+
     </div>
 </div>
 
@@ -24,19 +26,6 @@
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script type="text/javascript">
-    function handleClick(){
-
-        let val = document.getElementById("myVal").value;
-
-        if(isNaN(document.getElementById("myVal").value)){
-            document.writeln("The number you entered is not a number");
-            document.writeln("Please reload the page and try again");
-        }
-        else{
-            document.writeln("Thank you for completing this form");
-            console.log(val);
-        }
-    }
 </script>
 
 
@@ -44,15 +33,14 @@
     console.log(d3);
     var margin = {top: 10, right: 30, bottom: 40, left: 40},
         width = 300 - margin.left - margin.right,
-        height = 300 - margin.top - margin.bottom;4
+        height = 300 - margin.top - margin.bottom;
 
     var svg = d3.select("svg")
-        // .append("svg")
-        // .data([data])
         .attr("width", 600)
         .attr("height", 500)
         .append("g")
-        .attr("transform", "translate(" + 110 + "," + 110 + ")")
+        .attr("transform", "translate(" +  150 + "," + 150 + ")")
+
 
     // Read data
     d3.csv('index1.csv', function(data) {
@@ -92,7 +80,7 @@
             .append("text")
             .attr("x", function(d){ return d.x0+10})
             .attr("y", function(d){ return d.y0+20})
-            .text(function(d, i){ return i + 1})
+            .text(function(d, i){ return i })
             .attr("font-size", "15px")
             .attr("fill", "black")
 
