@@ -24,13 +24,23 @@
     <!--    <input type="text">-->
     <table>
       <tr>
-        <th><input type="text" class="ansInput" placeholder="small to large ratio"></th>
+        <th><input type="text" class="ansInput" placeholder="your answer here"></th>
         <th><input class="bar_h" type="button" id="ansSubmit" value="Next" onclick="recordAns(this)"></th>
       </tr>
     </table>
   </div>
 </div>
-
+<div class="description">
+  <div class="dscpText">
+    What do you think is the percentage of LENGTH of Bar 3 to Bar 4?
+  </div>
+  <div class="dscpText">
+    Please input the answer into the answer box above.
+  </div>
+  <div class="dscpText">
+    For example, if you think the LENGTH of Bar 3 is 50% of Bar 4, please input 50.
+  </div>
+</div>
 </body>
 
 <!--This is a example from https://www.youtube.com/watch?v=_8V5o2UHG0E&t=33209s
@@ -70,7 +80,7 @@ I modified this code and added some new things-->
 
     console.log(random_group[0])
     const colorLable = d=>{
-      if(parseInt(d) === random_group[0] || parseInt(d) === random_group[1]){
+      if(parseInt(d) === 3 || parseInt(d) === 4){
         return 'red'
       }
       else return 'black'
@@ -133,9 +143,10 @@ I modified this code and added some new things-->
     g.selectAll('rect').data(data)
     .enter().append('rect')
             .attr('y', d=>yScale(yValue(d)))
-    .attr('width', d=>xScale(xValue(d)))
-    .attr('height', yScale.bandwidth())
-    .style('fill', '#3ba0f7');
+            .attr('width', d=>xScale(xValue(d)))
+            .attr('height', yScale.bandwidth())
+            .style('fill', '#ffffff');
+    // .style('fill', '#3ba0f7');
   };
 
 

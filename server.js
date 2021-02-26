@@ -45,30 +45,32 @@ function shuffle(array) {
 
 // Used like so
 var arrs = [1, 2, 3, 4];
-shuffle(arrs);
+// shuffle(arrs);
 console.log(arrs);
 let index = -1
-
 var csvContent = ''
-for (var i = 0; i < 4; i++){
-    if (arrs[i] === 1){
-        csvContent += 'pie_chart,'
-    }
-    else if (arrs[i] === 2){
-        csvContent += 'tree_map,'
-    }
-    else if (arrs[i] === 3){
-        csvContent += 'bar_vertical,'
-    }
-    else if (arrs[i] === 4){
-        csvContent += 'bar_horizontal,'
-    }
-    if (i === 3){
-        csvContent += '\n'
-    }
-}
+
 
 app.get('/nextPage', function( req, res ){
+    csvContent = ''
+    shuffle(arrs);
+    for (var i = 0; i < 4; i++){
+        if (arrs[i] === 1){
+            csvContent += 'pie_chart,'
+        }
+        else if (arrs[i] === 2){
+            csvContent += 'tree_map,'
+        }
+        else if (arrs[i] === 3){
+            csvContent += 'bar_vertical,'
+        }
+        else if (arrs[i] === 4){
+            csvContent += 'bar_horizontal,'
+        }
+        if (i === 3){
+            csvContent += '\n'
+        }
+    }
     index += 1
     if (arrs[index] === 1) {
         res.sendFile(__dirname + "/Pie Chart/index_pie.html")
@@ -87,21 +89,6 @@ app.get('/nextPage', function( req, res ){
 
 
 
-// // csvContent += '第一句,';
-// // csvContent += '第二句,';
-// // csvContent += '第三句,';
-// // csvContent += '第四句\n';
-//
-// // 生成内容 \n下一行
-// list.forEach((item, index) => {
-//     csvContent += index + ',';
-//     csvContent += item.s1 + ',';
-//     csvContent += item.s2 + ',';
-//     csvContent += item.s3 + ',';
-//     csvContent += item.s4 + '\n';
-// })
-
-
 
 
 let ansList = []
@@ -118,16 +105,9 @@ app.post('/recAns', bodyparser.json(), function( req, res ){
 
 
 
-var transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: 'rinemiya0203@gmail.com',
-        pass: 'ainiruchu0723'
-    }
-});
 
 var mailOptions = {
-    from: 'rinemiya0203@gmail.com',
+    from: '1352795692@qq.com',
     to: ['rinemiya0203@gmail.com','xchen10@wpi.edu'],
     subject: 'hello',
     text: `hello`,
@@ -138,15 +118,19 @@ var mailOptions = {
     ]
 };
 
-// transporter.sendMail(mailOptions, function(error, info){
-//     if (error) {
-//         console.log(error);
-//     } else {
-//         console.log('Email sent: ' + info.response);
-//     }
-// });
 
 
+let transporter = nodemailer.createTransport({
+
+    service: 'qq',
+    port: 465,
+    secureConnection: true,
+    auth: {
+        user: '1352795692@qq.com',
+
+        pass: 'ditoplmicbpcjacf',
+    }
+});
 
 
 
@@ -154,6 +138,7 @@ var mailOptions = {
 app.get('/leads', function (req, res){
     index += 1
     if (index > 3){
+        index = -1
         console.log(csvContent)
         fs.writeFile('./responds/data.csv', csvContent, function(err){
             if (err) console.log(err, '---->csv<---')
