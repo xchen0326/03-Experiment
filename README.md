@@ -5,9 +5,9 @@ Assignment 3 - Replicating a Classic Experiment
 GitHub Details
 ---
 ## Design Achievements
-- Used the color combination that is good to human eyes:
-Turquoise and Warm Sand. The natural and youthful colors will
-intrigue the users to be more willing to participate in.
+- Used a background image which has the color really fits with the
+color of the div where the charts are in. Makes it comfortable for
+users to read the page.
 - Used LucidChart to add the four charts near our error analysis
 graph so that the analyzers can have a clear sense about what
 chart the analysis lines are corresponding to.
