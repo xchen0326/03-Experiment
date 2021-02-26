@@ -8,6 +8,7 @@ We used HTML, CSS, JavaScript and d3.js to accomplish this experiment. The follo
 
 
 Horizontal Bar
+
 ![](img/bar_horizontal.png)
 
 Vertical Bar
