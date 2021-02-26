@@ -29,7 +29,9 @@ On pages that have the charts, there are instructions that guided users to have 
 
 ![](img/instruction.png)
 
-In order to get the results from the users, we use nodemailer in node.js. After a user finishes the experiment and reaches the thank you page, an email with a csv file which records the user's answers will be sent to Xiaowei's email adress. After getting enough results, we reorganize the results into one single csv file for error calculation.
+In order to get the results from the users, we use nodemailer in node.js. After a user finishes the experiment and reaches the thank you page, an email with a csv file which records the user's answers will be sent to Xiaowei's email adress. After getting enough results, we reorganize the results into one single csv file for error calculation. The following is the error calculation result:
+
+![](img/error.png)
 
 
 ## Design Achievements
