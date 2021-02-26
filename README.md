@@ -4,7 +4,11 @@ Assignment 3 - Replicating a Classic Experiment
 
 GitHub Details
 ---
-We used HTML, CSS, JavaScript and d3.js to accomplish this experiment. The following are the four visualizations we have: the vertical bar chart, horizontal bar chat, pie chart and tree map. Every time the users open the web page, the order of the charts that show up are different. For example, user A may see the pages in order of horizontal bar, vertical bar, pie chart and tree map, but user B may see the pages in an order of tree map, vertical bar, pie char and horizontal bar, etc. 
+We used HTML, CSS, JavaScript and d3.js to accomplish this experiment. 
+The following are the four visualizations we have: the vertical bar chart, horizontal bar chat, pie chart and tree map. 
+Every time the users open the web page, the order of the charts that show up are different. 
+For example, user A may see the pages in order of horizontal bar, vertical bar, pie chart and tree map, but user B may 
+see the pages in an order of tree map, vertical bar, pie char and horizontal bar, etc.
 
 
 Horizontal Bar
@@ -32,6 +36,25 @@ On pages that have the charts, there are instructions that guided users to have 
 In order to get the results from the users, we use nodemailer in node.js. After a user finishes the experiment and reaches the thank you page, an email with a csv file which records the user's answers will be sent to Xiaowei's email adress. After getting enough results, we reorganize the results into one single csv file for error calculation. The following is the error calculation result:
 
 ![](img/error.png)
+
+# Experiment
+
+## Website
+![Insert Herokuapp link here ->]()
+
+### Hypothesis
+- People will most accurately guess the correct ratio between graphical elements when using the vertical bar chart. 
+
+### Conclusion 
+- As indicated by the BootStrapped 95% confidence interval, it is clear that the horizontal bar chart is the most 
+effective way for people to measure relative size. 
+
+![](img/errorChart.png)
+
+#### Reservations: 
+- After looking back on the experiment, one reason these results may have been recorded is because when using the 
+horizontal bar chart, the 2 bars in question are adjacent to one another. This may have allowed the participant to compare
+the bars against each other. 
 
 
 ## Design Achievements

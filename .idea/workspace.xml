@@ -19,17 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e39ace4-5808-4b16-b9e1-f0a266545a56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/parallax.png" afterDir="false" />
+    <list default="true" id="1e39ace4-5808-4b16-b9e1-f0a266545a56" name="Default Changelist" comment="Added bacgkround image, google API lato font, and changed some color schemes around.">
+      <change afterPath="$PROJECT_DIR$/img/errorChart.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BarChart/index_bar_horizontal.html" beforeDir="false" afterPath="$PROJECT_DIR$/BarChart/index_bar_horizontal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BarChart/index_bar_vertical.html" beforeDir="false" afterPath="$PROJECT_DIR$/BarChart/index_bar_vertical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pie Chart/index_pie.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pie Chart/index_pie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tree Map/index_tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tree Map/index_tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/responds/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/responds/data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/consentNotify.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/consentNotify.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/thankyou.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +70,9 @@
       <recent name="C:\Users\gpap2\OneDrive\Desktop\01-ghd3\03-Experiment\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gpap2\OneDrive\Desktop\01-ghd3\03-Experiment\img" />
+      <recent name="C:\Users\gpap2\OneDrive\Desktop\01-ghd3\03-Experiment\ErrorChart" />
+      <recent name="C:\Users\gpap2\OneDrive\Desktop\01-ghd3\03-Experiment\Data Analysis" />
       <recent name="C:\Users\gpap2\OneDrive\Desktop\01-ghd3\03-Experiment\public" />
     </key>
   </component>
@@ -103,6 +100,14 @@
       <workItem from="1614301404627" duration="10697000" />
       <workItem from="1614368307584" duration="992000" />
     </task>
+    <task id="LOCAL-00001" summary="Added bacgkround image, google API lato font, and changed some color schemes around.">
+      <created>1614378745181</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614378745181</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,5 +134,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added bacgkround image, google API lato font, and changed some color schemes around." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added bacgkround image, google API lato font, and changed some color schemes around." />
   </component>
 </project>
