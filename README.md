@@ -42,7 +42,7 @@ In order to get the results from the users, we use nodemailer in node.js. After 
 ## Website
 Here is the link for the web page being hosted on herokuApp: https://charts-experiment.herokuapp.com/
 
-Please note: only close the page and open it again after you reach the thank you page!
+Please note: If you want to reopen the website and you have already clicked the Agree button, please close the web page and reopen it after you go through all the four charts and reach the thank you page! Don't close the web page and try to reopen it in the middle of the way.
 
 ### Hypothesis
 - People will most accurately guess the correct ratio between graphical elements when using the vertical bar chart. 
